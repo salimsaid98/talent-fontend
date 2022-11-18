@@ -1,54 +1,42 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DarshComponent } from './admin/compo/darsh/darsh.component';
-import { RegExpComponent } from './admin/compo/reg-exp/reg-exp.component';
-import { SearTalentComponent } from './admin/compo/sear-talent/sear-talent.component';
-import { ViewReportComponent } from './admin/compo/view-report/view-report.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DarsCardComponent } from './admin/compo/dars-card/dars-card.component';
 import {MatStepperModule} from '@angular/material/stepper'; 
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field'; 
 import {MatInputModule} from '@angular/material/input'; 
 import {MatIconModule} from '@angular/material/icon'; 
 import {MatTableModule} from '@angular/material/table';
-import { LoginComponent } from './admin/compo/login/login.component'; 
 import {MatCardModule} from '@angular/material/card';
-import { DarshexpComponent } from './expert/compo/darshexp/darshexp.component';
-import { RegisterexpComponent } from './expert/compo/registerexp/registerexp.component';
-import { SearchexpComponent } from './expert/compo/searchexp/searchexp.component';
-import { NotificationexpComponent } from './expert/compo/notificationexp/notificationexp.component';
-import { ProfileComponent } from './expert/compo/profile/profile.component';
-import { UserNavComponent } from './user/compo/user-nav/user-nav.component';
-import { UserRegComponent } from './user/compo/user-reg/user-reg.component';
-import { UserDarshComponent } from './user/compo/user-darsh/user-darsh.component';
-import { UserNotificationComponent } from './user/compo/user-notification/user-notification.component'; 
 import {MatTabsModule} from '@angular/material/tabs';
-import { UserTableComponent } from './user/compo/user-table/user-table.component';
-import { UserLoginComponent } from './user/compo/user-login/user-login.component'; 
+import { HttpClientModule } from '@angular/common/http';
+import {MatSelectModule} from '@angular/material/select'; 
+import { FormsModule } from '@angular/forms';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatButtonModule } from '@angular/material/button';
+import { LayoutModule } from '@angular/cdk/layout';
+import { HomeComponent } from './compo/home/home.component';
+import { NavComponent } from './compo/nav/nav.component';
+import { ProfileComponent } from './compo/profile/profile.component';
+import { NotificationComponent } from './compo/notification/notification.component';
+import { FriendsComponent } from './compo/friends/friends.component';
+import { AllFriendsComponent } from './compo/all-friends/all-friends.component';
+import { AddFriendsComponent } from './compo/add-friends/add-friends.component'; 
 @NgModule({
   declarations: [
     AppComponent,
-    DarshComponent,
-    RegExpComponent,
-    SearTalentComponent,
-    ViewReportComponent,
-    DarsCardComponent,
-    LoginComponent,
-    DarshexpComponent,
-    RegisterexpComponent,
-    SearchexpComponent,
-    NotificationexpComponent,
+    HomeComponent,
+    NavComponent,
     ProfileComponent,
-    UserNavComponent,
-    UserRegComponent,
-    UserDarshComponent,
-    UserNotificationComponent,
-    UserTableComponent,
-    UserLoginComponent,
+    NotificationComponent,
+    FriendsComponent,
+    AllFriendsComponent,
+    AddFriendsComponent
     
   ],
   imports: [
@@ -62,8 +50,18 @@ import { UserLoginComponent } from './user/compo/user-login/user-login.component
     MatIconModule,
     MatTableModule,
     MatCardModule,
-    MatTabsModule
-  
+    MatTabsModule,
+    HttpClientModule,
+    MatSelectModule ,
+    FormsModule,
+    Ng2SearchPipeModule ,
+    MatDatepickerModule,
+    MatGridListModule,
+    MatMenuModule,
+    MatButtonModule,
+    LayoutModule,
+   
+
     
   ],
   providers: [],
